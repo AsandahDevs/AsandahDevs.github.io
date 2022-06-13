@@ -1,254 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Bootstrap,custom website,HTML5,CSS3">
-    <meta name="Author" content="Asanda Majola">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Bootstrap,custom website,HTML5,CSS3" />
+    <meta name="Author" content="Asanda Majola" />
     <title>Mchunu SeaFoods</title>
-     <!--Importing bootstrap via a CDN link-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-     <!--Importing bootstrap icons via a CDN link-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Importing bootstrap via a CDN link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--Importing bootstrap icons via a CDN link-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <style>
-        body{
-           padding-top: 60px;
-           content: " "; 
-           background-color:blueviolet;
-        }
-       .card{
-           width:250px;
-           
-       } 
+      body {
+        padding-top: 60px;
+        content: " ";
+        background-color: blueviolet;
+      }
+      .card {
+        width: 250px;
+      }
 
-       .card-img-top{
-           height:15rem;
-       }
-       .bi-facebook{
-           color:lightblue;
-       }
-       .bi-twitter{
-           color:white;
-       }
-       .bi-youtube{
-           color:red;
-       }
-       .bi-instagram{
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      .card-img-top {
+        height: 15rem;
+      }
+      .bi-facebook {
+        color: lightblue;
+      }
+      .bi-twitter {
+        color: white;
+      }
+      .bi-youtube {
+        color: red;
+      }
+      .bi-instagram {
+        background: radial-gradient(
+          circle at 30% 107%,
+          #fdf497 0%,
+          #fdf497 5%,
+          #fd5949 45%,
+          #d6249f 60%,
+          #285aeb 90%
+        );
         -webkit-background-clip: text;
         /* Defining standard property for compatibility */
         background-clip: text;
-         -webkit-text-fill-color: transparent;
-           
-       }
-       a{
-           color: white;
-       }
+        -webkit-text-fill-color: transparent;
+      }
+      a {
+        color: white;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!--navbar-expand-md dictates to the web browser when to expand the navigation menu.In this case, when the screen width is >768px which is the breakpoint for medium-sized screens-->
-   <nav class="navbar navbar-expand-md bg-secondary  navbar-dark fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand"><img src="https://asandahdevs.github.io/Images/squid-clipart.svg"height="28" alt="squid-logo"><em> Mchunu SeaFoods</em></a><!--Use relative path when pasting image paths.This is because web servers',unlike browsers', don't have a built-in function to access your images stored in your local drive.-->
-            <button class="navbar-toggler" 
-                        type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#navmenu">
-             <span class="navbar-toggler-icon"></span> 
-            </button>
+    <nav class="navbar navbar-expand-md bg-secondary navbar-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          ><img
+            src="https://asandahdevs.github.io/Images/squid-clipart.svg"
+            height="28"
+            alt="squid-logo"
+          /><em> Mchunu SeaFoods</em></a
+        ><!--Use relative path when pasting image paths.This is because web servers',unlike browsers', don't have a built-in function to access your images stored in your local drive.-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto ">
-                <li class="nav-item">
-                    <a href="#homepage" class="nav-link" active>Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu" class="nav-link">Dishes</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact Us</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#homepage" class="nav-link" active>Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#menu" class="nav-link">Dishes</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
     </nav>
-    <section class=" text-center text-white py-2" id="homepage">
-        <div class="container">
-            <div class="row g-md-5 text-center">
-                <div class="col-md-10">
-                    <h1>Tired of being catfished? Come to Mchunu SeaFoods. </h1>
-                    <p class="lead">Where we serve our customers' with honest and mouth-watering seafoods that will have you begging for more as they aim to please . </p>
-                    <a class="btn btn-dark" href="#menu">View our dishes &raquo</a>
-                </div>
-                <div class="col-md">
-                    <div class="clearfix">
-                        <img class=" d-none d-md-block float-md-end " src="https://asandahdevs.github.io/Images/crab.svg" height="200"  alt="A crab">
-                    </div>
-                </div>
+    <section class="text-center text-white py-2" id="homepage">
+      <div class="container">
+        <div class="row g-md-5 text-center">
+          <div class="col-md-10">
+            <h1>Tired of being catfished? Come to Mchunu SeaFoods.</h1>
+            <p class="lead">
+              Where we serve our customers' with honest and mouth-watering
+              seafoods that will have you begging for more as they aim to please
+              .
+            </p>
+            <a class="btn btn-dark" href="#menu">View our dishes &raquo</a>
+          </div>
+          <div class="col-md">
+            <div class="clearfix">
+              <img
+                class="d-none d-md-block float-md-end"
+                src="https://asandahdevs.github.io/Images/crab.svg"
+                height="200"
+                alt="A crab"
+              />
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="bg-dark text-light py-2 mt-3">
-        <div class="container">
+      <div class="container">
         <h2 id="about" class="text-md-center"><strong>About Us</strong></h2>
-        <p>We are a restaurant that specialises in providing an exceptional seafood dining experience for our seafood lovers.We started as a business that sold home-made 
-            cooked fish to the people of Umlazi, a township located in Durban,South Africa.We would set-up a stand near the Umlazi Z section taxi rank and sell to commuters travelling 
-            by taxi to work.This lead to us growing into a successful SME that employs 156 people from all-over the Durban region.We are currently located in Durban,South along the beach promenade next to steers.</p>
-        </div>
+        <p>
+          We are a restaurant that specialises in providing an exceptional
+          seafood dining experience for our seafood lovers.We started as a
+          business that sold home-made cooked fish to the people of Umlazi, a
+          township located in Durban,South Africa.We would set-up a stand near
+          the Umlazi Z section taxi rank and sell to commuters travelling by
+          taxi to work.This lead to us growing into a successful SME that
+          employs 156 people from all-over the Durban region.We are currently
+          located in Durban,South along the beach promenade next to steers.
+        </p>
+      </div>
     </section>
     <section class="mb-3 mt-3">
-        <div class="container">
-            <h2 id="menu" class="text-md-center"><strong>Dishes</strong></h2>
-                <div class="row g-4 text-black">
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/fish & chips.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Fish & Chips</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Cioppino -Italian seafood stew.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Cioppino:Italian seafood stew</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Creamy garlic seafood pasta.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Creamy garlic seafood pasta</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Salmon.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Salmon</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Lobster.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Lobster</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Mussels.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Mussels</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Shrimp.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Shrimp</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/spicy calamari sushi rolls.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Spicy calamari sushi rolls</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Grilled octopus.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Grilled octopus</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Frutti di Mare.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Frutti di Mare</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Fried calamari.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Fried Calamari</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md">
-                        <div class="card">
-                            <img class="card-img-top"src="https://asandahdevs.github.io/Images/Filipino.jfif" alt="image">
-                            <div class="card-body text-center">
-                                <h3><strong>Filipino</strong></h3>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 id="menu" class="text-md-center"><strong>Dishes</strong></h2>
+        <div class="row g-4 text-black">
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/fish & chips.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Fish & Chips</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Cioppino -Italian seafood stew.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Cioppino:Italian seafood stew</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Creamy garlic seafood pasta.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Creamy garlic seafood pasta</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Salmon.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Salmon</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Lobster.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Lobster</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Mussels.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Mussels</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Shrimp.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Shrimp</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/spicy calamari sushi rolls.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Spicy calamari sushi rolls</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Grilled octopus.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Grilled octopus</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Frutti di Mare.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Frutti di Mare</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Fried calamari.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Fried Calamari</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card">
+              <img
+                class="card-img-top"
+                src="https://asandahdevs.github.io/Images/Filipino.jfif"
+                alt="image"
+              />
+              <div class="card-body text-center">
+                <h3><strong>Filipino</strong></h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <section class="bg-dark text-md-center text-light py-2">
-        <div class="container">
+      <div class="container">
         <h2 id="contact"><strong>Contact Us</strong></h2>
-            <p>For more mouth watering content send us an email to <br><i class="bi-envelope"></i> mchunucustomerservice@gmail.com <br> OR <br><i class="bi-telephone"></i> Call 087 353 4549</p>
-            <p>Alternatively, you can visit our social media pages <br><a href="#"><i class="bi-facebook"></i></a>  <a href="#"><i class="bi-instagram"></i></a>  <a href="#"><i class="bi-twitter"></i></a>  <a href="#"><i class="bi-youtube"></i></a></p>
-        </div>
+        <p>
+          For more mouth watering content send us an email to <br /><i
+            class="bi-envelope"
+          ></i>
+          mchunucustomerservice@gmail.com <br />
+          OR <br /><i class="bi-telephone"></i> Call 087 353 4549
+        </p>
+        <p>
+          Alternatively, you can visit our social media pages <br /><a href="#"
+            ><i class="bi-facebook"></i
+          ></a>
+          <a href="#"><i class="bi-instagram"></i></a>
+          <a href="#"><i class="bi-twitter"></i></a>
+          <a href="#"><i class="bi-youtube"></i></a>
+        </p>
+      </div>
     </section>
     <section class="mt-3">
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <p class="text-white"> &copy; Asanda Majola 2022</p>
-                    </div>
-                    <div class="col-md text-md-end">
-                        <p><a href="#">Terms and Conditions</a> <span>|</span> <a href="#">Privacy</a></p>
-                    </div>
-                </div>
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md">
+              <p class="text-white">&copy; Asanda Majola 2022</p>
             </div>
-        </footer>
+            <div class="col-md text-md-end">
+              <p>
+                <a href="#">Terms and Conditions</a> <span>|</span>
+                <a href="#">Privacy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </section>
-<!--Importing a js bundler inside the body tag-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    <!--Importing a js bundler inside the body tag-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
